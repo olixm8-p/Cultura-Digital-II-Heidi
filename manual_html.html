@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual HTML - Cultura Digital II</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            cursor: default;
+        }
+        header {
+            background-color: #6A0DAD;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4B0082;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #9370DB;
+        }
+        section {
+            padding: 40px;
+            background: white;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            animation: fadeIn 1.5s ease-in;
+        }
+        h1, h2 {
+            color: #4B0082;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Roboto Mono', monospace;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #6A0DAD;
+            color: white;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        .subir {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #6A0DAD;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+        .subir:hover {
+            background-color: #9370DB;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    CULTURA DIGITAL II
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="redes.html">Redes Sociales</a>
+    <a href="cibertn.html">Ciberdelincuencia</a>
+    <a href="manual_html.html">Manual HTML</a>
+</nav>
+
+<section>
+    <h1>Manual de HTML</h1>
+
+    <p>HTML (HyperText Markup Language) es el lenguaje principal utilizado para crear páginas web. Es un lenguaje de marcado que estructura el contenido mediante etiquetas. Cada etiqueta indica al navegador cómo mostrar los elementos (texto, imágenes, enlaces, etc.).</p>
+
+    <img src="img/manual_html.jpg" alt="Manual HTML">
+
+    <h2>Etiquetas HTML básicas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1&gt; a &lt;h6&gt;</td>
+                <td>Títulos (de mayor a menor importancia)</td>
+                <td>&lt;h1&gt;Hola Mundo&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Párrafo</td>
+                <td>&lt;p&gt;Texto aquí&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Hipervínculo</td>
+                <td>&lt;a href="url"&gt;Enlace&lt;/a&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Imagen</td>
+                <td>&lt;img src="img.jpg"&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Contenedor genérico</td>
+                <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Ejemplo de estructura básica</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Mi primera página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>Consejos para programar en HTML</h2>
+    <ul>
+        <li>Usa indentación para que el código sea más legible.</li>
+        <li>Verifica que todas tus etiquetas se abran y cierren correctamente.</li>
+        <li>Organiza tu contenido en secciones lógicas (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;).</li>
+        <li>Combina HTML con CSS para estilos y con JavaScript para funcionalidades.</li>
+    </ul>
+
+</section>
+
+<a href="#top" class="subir" title="Subir al inicio">&#8679;</a>
+
+</body>
+</html>
